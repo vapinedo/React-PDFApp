@@ -8,3 +8,10 @@ iframe {
     height: 100vh;        /* Viewport-relative units */
     width: 100vw;
 }
+
+.page-header {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,11 +1,16 @@
 import GeneratePDf from "./components/GeneratePDF";
+import Navbar from "./components/UI/Navbar";
+import UsuarioAdmin from "./components/Usuarios/UsuarioAdmin";
 
 const App = () => {
   return (
-    <GeneratePDf />
-    // <main>
-    //   <h1>Software de Gestion Fotocopias</h1>
-    // </main>
+    <>
+      <Navbar />
+      <main className="container py-5">
+        <UsuarioAdmin />
+      </main>
+      {/* <GeneratePDf /> */}
+    </>
   );
 };
 
