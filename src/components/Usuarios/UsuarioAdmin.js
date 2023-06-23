@@ -1,11 +1,16 @@
+import { useNavigate } from "react-router-dom";
+
 const UsuarioAdmin = () => {
+
+    const navigate = useNavigate();
+
     return (
         <>
             <header className="page-header">
                 <h1>
                     Usuarios <small className="text-muted">Admin</small>
                 </h1>
-                <button className="btn btn-primary">Nuevo</button>
+                <button onClick={() => navigate("usuario-nuevo")} className="btn btn-primary">Nuevo</button>
             </header>
 
             <table className="table">
